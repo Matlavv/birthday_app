@@ -1,15 +1,15 @@
 import { format } from "date-fns";
+import React from "react";
 
-const Header = () => {
+const Header: React.FC = () => {
   const currentDate = format(new Date(), "dd/MM/yyyy");
 
   return (
-    <header
-      style={{ backgroundColor: "white", borderBottom: "1px solid black" }}
-    >
-      <h1 style={{ float: "left" }}>Citation et anniversaires</h1>
-      <p style={{ float: "right" }}>{currentDate}</p>
-      <div style={{ clear: "both" }}></div>
+    <header className="border-b-black border-2">
+      <div className="flex justify-between items-center p-5">
+        <h1 className="text-3xl">Citation et anniversaires</h1>
+        <p className="text-3xl">{currentDate}</p>
+      </div>
     </header>
   );
 };
