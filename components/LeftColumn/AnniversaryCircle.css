@@ -1,0 +1,24 @@
+.anniversary-circle {
+  width: 256px;
+  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.anniversary-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(270deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
