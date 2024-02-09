@@ -1,10 +1,12 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import localFont from "next/font/local";
+
+const bison = localFont({ src: "../assets/fonts/bison.ttf" });
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+    <div className={bison.className}>
+      <Header />
     </div>
   );
 }
